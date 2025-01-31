@@ -1,0 +1,171 @@
+/* CSS Variables for Color Scheme and Fonts */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #2d3436;
+    --accent-color: #e74c3c;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Global Styles */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  nav {
+    margin-top: 15px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Section Styling with Rounded Rectangles */
+  .section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+  }
+  
+  .section .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Section Headings */
+  .section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Card Styling for Education, Projects, Experience */
+  .card {
+    background: var(--light-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+  }
+  
+  /* Project Tech info */
+  .tech {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+  }
+  
+  /* Skills Section */
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    background: var(--light-color);
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .nav-list li {
+      margin: 0 10px;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
